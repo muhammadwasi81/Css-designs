@@ -1,0 +1,236 @@
+// variables
+$Dark-Blue: hsl(233, 26%, 24%);
+$Lime-Green: hsl(136, 65%, 51%);
+$Bright-Cyan: hsl(192, 70%, 51%);
+
+$Grayish-Blue: hsl(233, 8%, 62%);
+$Light-GrayishBlue: hsl(220, 16%, 96%);
+$Very-LightGray: hsl(0, 0%, 98%);
+$White: hsl(0, 0%, 100%);
+
+// font sizes variables
+$sm-font-size: 14px;
+$lg-font-size: 18px;
+$sm-font-size: 14px;
+
+// utilities
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Public Sans', 'Helvetica';
+  background: $Very-LightGray;
+  font-size: $lg-font-size;
+  scroll-behavior: smooth;
+}
+
+.header {
+  background: $White;
+  box-shadow: 2px 2px 4px $Very-LightGray;
+
+  .topHeader {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    width: 80%;
+    align-items: center;
+    margin: 0 auto;
+
+    .navigation ul,
+    .mobileNav ul {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      flex-flow: row nowrap;
+    }
+
+    .navLink {
+      font-size: $lg-font-size;
+      display: inline-block;
+      text-decoration: none;
+      padding: 30px 10px;
+      color: $Dark-Blue;
+    }
+
+    .navToggler,
+    .mobileNav {
+      display: none;
+    }
+  }
+}
+
+// button component
+#requestBtn {
+  outline: none;
+  border: none;
+  padding: 16px 25px;
+  border-radius: 27px;
+  color: $White;
+  background: linear-gradient(45deg, $Lime-Green, $Bright-Cyan);
+  user-select: none;
+  cursor: pointer;
+  font-size: $sm-font-size;
+  transition: opacity 0.5s ease-in-out;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+// Hero section
+
+.digitalBanking {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1;
+  width: 100%;
+  height: 650px;
+  background: $Very-LightGray;
+
+  .dgtBankInfo {
+    margin: auto 5% auto 10%;
+    width: 35%;
+  }
+
+  .dgtBankInfo h1,
+  .chooseEbank h1 {
+    font-size: 50px;
+    margin: 30px 0px;
+    font-weight: 400;
+    color: $Dark-Blue;
+  }
+
+  .text-muted {
+    color: $Grayish-Blue;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: lighter;
+  }
+
+  .dgtBankInfo #requestBtn {
+    margin: 25px 0;
+  }
+
+  .dgtBankImg {
+    background: url('../images/bg-intro-desktop.svg');
+    background-position: 12% 75%;
+    width: 50%;
+    height: 650px;
+  }
+
+  .dgtBankImg img {
+    width: 100%;
+    height: 850px;
+    overflow: auto !important;
+    object-position: 100px -100px;
+    object-fit: cover;
+  }
+}
+
+// E bank section
+.chooseEbank {
+  padding: 5% 10%;
+  background: $Light-GrayishBlue;
+
+  .easyBank {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5% 0;
+  }
+
+  .easyBank h1 {
+    font-size: 24px;
+    margin: 40px 0;
+    color: $Dark-Blue;
+  }
+
+  .chooseBank-heading {
+    font-size: 45px;
+    font-weight: 400;
+    padding: 25px 0;
+  }
+
+  .easyBank div {
+    width: 23%;
+  }
+
+  .text-muted {
+    color: $Grayish-Blue;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: lighter;
+  }
+}
+
+// Articles section
+
+.articles {
+  padding: 5% 10%;
+  background: $Very-LightGray;
+
+  h1 {
+    color: $Dark-Blue;
+    font-weight: 500;
+  }
+
+  .articlesList {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-flow: row nowrap;
+    padding: 30px 0;
+  }
+
+  .latestArticles {
+    width: 24%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 30px 0px 0 0;
+    background: var(--white);
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 30px 10px 0 0;
+    }
+
+    div {
+      padding: 20px 25px;
+    }
+
+    div a {
+      color: $Dark-Blue;
+      font-weight: lighter;
+      font-size: 17px;
+      text-decoration: none;
+    }
+
+    .authorMuted {
+      color: $Grayish-Blue;
+      font-size: 10px;
+    }
+
+    .text-muted {
+      color: $Grayish-Blue;
+      line-height: 20px;
+      font-size: 13px;
+      text-align: justify;
+    }
+
+    a:hover {
+      color: $Lime-Green;
+    }
+  }
+}
