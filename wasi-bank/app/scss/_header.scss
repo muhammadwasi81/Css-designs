@@ -1,0 +1,75 @@
+// header
+
+.header {
+  background: $White;
+  box-shadow: 0px 5px 0px $Very-LightGray;
+}
+
+.topHeader {
+  background: $White;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navigation ul,
+.mobileNav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+// .navLink {
+//   font-size: $sm-font-size;
+//   display: inline-block;
+//   padding: 22px 15px;
+//   text-decoration: none;
+//   color: $Grayish-Blue;
+//   border-bottom: 5px solid $White;
+// }
+
+// .navLink.active {
+//   border-bottom: 5px solid $Lime-Green;
+//   padding: 22px 15px;
+//   color: $Black;
+// }
+
+// .navLink:hover:not(.active) {
+//   color: $Black;
+//   border-bottom: 5px solid $Lime-Green;
+//   padding: 22px 15px;
+// }
+
+.navLink {
+  font-size: $sm-font-size;
+  display: inline-block;
+  padding: 22px 15px;
+  text-decoration: none;
+  color: $Grayish-Blue;
+}
+.navLink::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: $Lime-Green;
+  transition: width 0.3s;
+}
+.navLink:hover::after {
+  width: 100%;
+}
+
+.navToggler {
+  display: none;
+}
+
+.mobileNav {
+  display: none;
+}

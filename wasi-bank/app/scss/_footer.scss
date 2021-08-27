@@ -1,0 +1,76 @@
+.footer {
+  padding: 5% 10%;
+  background: $Dark-Blue;
+}
+
+.footerList {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  align-content: space-between;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footerDiv {
+  align-self: stretch;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.footerDiv a {
+  color: $White;
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.footerDiv a:hover {
+  color: $Lime-Green;
+}
+
+#link:hover {
+  fill: $Lime-Green;
+}
+
+.footerDiv:last-child {
+  align-items: flex-end;
+  width: 40%;
+}
+
+.footerDiv:last-child p {
+  margin: 15px 0 0 0;
+  font-size: 14px;
+  color: $Grayish-Blue;
+}
+
+.footerDiv:last-child a {
+  display: inline-block;
+}
+
+.footerDiv svg:first-child {
+  margin: 0 10px 0px 10px;
+}
+
+.socialLinks {
+  margin-top: 40px;
+}
+
+.footerDiv #requestBtn {
+  opacity: 0.8;
+}
+
+.footerDiv #requestBtn:hover {
+  background: $Lime-Green;
+  background: -webkit-linear-gradient(left, $Lime-Green, $Bright-Cyan);
+  background: -o-linear-gradient(right, $Lime-Green, $Bright-Cyan);
+  background: -moz-linear-gradient(right, $Lime-Green, $Bright-Cyan);
+  background: linear-gradient(to right, $Lime-Green, $Bright-Cyan);
+  opacity: 1;
+}
+
+#logoFill {
+  fill: white;
+}

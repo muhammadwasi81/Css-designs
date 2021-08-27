@@ -1,0 +1,21 @@
+#requestBtn {
+  background: $Lime-Green;
+  background: -webkit-linear-gradient(left, $Lime-Green, $Bright-Cyan);
+  background: -o-linear-gradient(right, $Lime-Green, $Bright-Cyan);
+  background: -moz-linear-gradient(right, $Lime-Green, $Bright-Cyan);
+  background: linear-gradient(to right, $Lime-Green, $Bright-Cyan);
+  padding: 15px 25px;
+  border-radius: 25px;
+  color: $White;
+  font-size: $sm-font-size;
+  border: none;
+  transition: opacity 0.4s ease-in;
+}
+
+#requestBtn:focus {
+  outline: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
